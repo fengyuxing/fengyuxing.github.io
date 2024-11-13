@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Play Redirect Demo</title>
+</head>
+<body>
+<h2>点击按钮跳转到 Google Play 应用商店</h2>
+<button onclick="openInPlayStore()">打开 Google Play</button>
+
+<script type="text/javascript">
+    function openInPlayStore() {
+        // 将 Google Play URL 修改为网页链接
+        var packageName = "com.epoch.classup";
+        var playStoreUrl = "https://play.google.com/store/apps/details?id=" + packageName;
+        window.location.href = playStoreUrl; // 通过WebView跳转网页链接
+    }
+</script>
+</body>
+</html>
+
